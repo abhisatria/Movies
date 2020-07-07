@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/errorLayout"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/connection_failed_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/connection_failed"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"></ImageView>
+
+    <TextView
+        android:id="@+id/errorTitle"
+        android:text="Error Title"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_below="@id/connection_failed_logo"
+        android:fontFamily="sans-serif-light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal">
+    </TextView>
+    <TextView
+        android:id="@+id/errorMessage"
+        android:text="Error Message"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:layout_below="@id/errorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal">
+    </TextView>
+
+    <Button
+        android:id="@+id/btnRetry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retry"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_below="@id/errorMessage"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"></Button>
+</RelativeLayout>
